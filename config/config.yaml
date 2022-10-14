@@ -1,0 +1,30 @@
+# name used to save the model
+name: bart-base
+
+# facebook/bart-base or facebook/bart-large
+model: facebook/bart-base
+
+# Whether or not to use the pretrained model
+pretrained: True
+
+# Hyperparameters
+batch_size: 5
+beam_size: 5
+dropout: 0.25
+attention_dropout: 0.0
+grad_accum_steps: 10
+warmup_steps: 1
+weight_decay: 0.004
+grad_norm: 2.5
+learning_rate: 0.00005
+max_epochs: 30
+
+# Weights and Biases
+# whether or not to use weights and biases to log training
+wandb: True
+
+# your weights and biases login key https://wandb.ai/authorize (required for hyperparameter search)
+key: some-key
+
+# your weights and biases project name (required for hyperparameter search)
+project: some-project

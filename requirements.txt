@@ -1,0 +1,6 @@
+PyDelphin
+torch
+transformers
+datasets
+wandb
+smatch
